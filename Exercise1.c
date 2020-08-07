@@ -16,14 +16,14 @@ int ex1(int testcase){
 	while (t){
 		d = n/t;
 		n %= t;
-		if (t > 10 || t == 1 ||  10*d < 10){
+		if (t > 10 || t == 1 ||  10*d >= 20 &&10*d < 10){
 			switch (p){
 				case 1:{
-					printf("one ");
+					printf("0ne ");
 					break; 
 				}
 				case 2:{
-					printf("two ");
+					printf("tw0 ");
 					break;
 				}
 				case 3:{
@@ -31,7 +31,7 @@ int ex1(int testcase){
 					break;
 				}
 				case 4:{
-					printf("four ");
+					printf("f0ur ");
 					break;
 				}
 				case 5:{
@@ -120,7 +120,7 @@ int ex1(int testcase){
 					break;
 				}
 				case 4:{
-					printf("forty ");
+					printf("f0rty ");
 					break;
 				}
 				case 5:{
