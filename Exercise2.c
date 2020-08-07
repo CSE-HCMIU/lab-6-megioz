@@ -11,7 +11,25 @@ Ex:
 #include <stdlib.h>
 
 int ex2(int n, char *str[]){
-	//your codes here
+	 int i,j,count;
+   char str[100][100],tempo[100];
+   puts("the number of string: ");
+   scanf("%d",&count);
+
+   puts("Enter Strings  ");
+   for(i=0;i<=count;i++)
+      gets(str[i]);
+   for(i=0;i<=count;i++)
+      for(j=i+1;j<=count;j++){
+         if(strcmp(str[i],str[j])>0){
+            strcpy(tempo,str[i]);
+            strcpy(str[i],str[j]);
+            strcpy(str[j],tempo);
+         }
+      }
+   printf("after sort");
+   for(i=0;i<=count;i++)
+      puts(str[i]);
 }
 
 int main(int argc, char *argv[]) {
