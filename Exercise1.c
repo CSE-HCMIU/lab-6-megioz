@@ -14,16 +14,16 @@ int ex1(int testcase){
 	n = testcase;
 	t = 1000;
 	while (t){
-		d = n/t;
+		p= n/t;
 		n %= t;
 		if (t > 10 || t == 1 ||  p >= 20 &&p < 10){
 			switch (p){
 				case 1:{
-					printf("0ne ");
+					printf("one ");
 					break; 
 				}
 				case 2:{
-					printf("tw0 ");
+					printf("two ");
 					break;
 				}
 				case 3:{
@@ -31,7 +31,7 @@ int ex1(int testcase){
 					break;
 				}
 				case 4:{
-					printf("f0ur ");
+					printf("four ");
 					break;
 				}
 				case 5:{
@@ -105,15 +105,17 @@ int ex1(int testcase){
 							break;
 						}
 						case 0:{
-							printf(" ten ");
+							printf("ten ");
 							break;
 						}
 					}
 					break;
-					}
-				}if (d == 1)
+				}
+				
+				}
+				if (p== 1)
 				break;
-				switch (d){
+				switch (p){
 				case 2:{
 					printf("twenty ");
 					break;
@@ -123,7 +125,7 @@ int ex1(int testcase){
 					break;
 				}
 				case 4:{
-					printf("f0rty ");
+					printf("forty ");
 					break;
 				}
 				case 5:{
@@ -146,12 +148,14 @@ int ex1(int testcase){
 					printf("ninty ");
 					break;
 				}
-				}
+				
 			}
 		}
 		t /= 10;
 	}
 }
+
+
 
 int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
