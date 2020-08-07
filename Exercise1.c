@@ -60,7 +60,7 @@ int ex1(int testcase){
 			printf("thousand ");
 		}
 		if (t == 100 && p% t != 0){
-			printf("hundred and ");
+			printf("hundred ");
 		}
 		if (t == 10){
 			switch (p){
