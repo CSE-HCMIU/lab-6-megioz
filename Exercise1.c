@@ -151,8 +151,6 @@ int ex1(int testcase){
 
 int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
-	printf("input an at most 4 digit number :");
-	scanf("%d",&testcase);
 	ex1(testcase);
 		
 	return 0;
