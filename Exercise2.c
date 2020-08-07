@@ -14,13 +14,13 @@ int ex2(int n, char *str[]){
 	 int i,j,count;
    char str[100][100],tempo[100];
    puts("the number of string: ");
-   scanf("%d",&count);
+   scanf("%d",&n);
 
    puts("Enter Strings  ");
-   for(i=0;i<=count;i++)
+   for(i=0;i<=n;i++)
       gets(str[i]);
-   for(i=0;i<=count;i++)
-      for(j=i+1;j<=count;j++){
+   for(i=0;i<=n;i++)
+      for(j=i+1;j<=n;j++){
          if(strcmp(str[i],str[j])>0){
             strcpy(tempo,str[i]);
             strcpy(str[i],str[j]);
@@ -28,7 +28,7 @@ int ex2(int n, char *str[]){
          }
       }
    printf("after sort");
-   for(i=0;i<=count;i++)
+   for(i=0;i<=n;i++)
       puts(str[i]);
 }
 
