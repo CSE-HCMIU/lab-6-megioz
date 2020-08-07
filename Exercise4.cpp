@@ -12,9 +12,19 @@ Ex:
 #include <stdlib.h>
 
 int ex4(char *testcase){
-	//your codes here
+	string b;
+	cout << "Input yor string: ";getline(cin, b);
+	while (b[0] == ' ')
+	{
+		b.erase(b.begin() + 0);
+	}
+	while (b[b.length() - 1] == ' ')
+	{
+		b.erase(b.end()-1);
+	cout <<"Output: |"<< b <<"|"<< endl;
+	system("pause");
 }
-
+	
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	char *testcase = "  this  is an   unformatted  string ";
