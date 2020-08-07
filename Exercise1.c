@@ -16,7 +16,7 @@ int ex1(int testcase){
 	while (t){
 		d = n/t;
 		n %= t;
-		if (t > 10 || t == 1 ||  10*d >= 20 &&10*d < 10){
+		if (t > 10 || t == 1 ||  p >= 20 &&p < 10){
 			switch (p){
 				case 1:{
 					printf("0ne ");
@@ -56,10 +56,10 @@ int ex1(int testcase){
 				}
 			}
 		}
-		if (t == 1000 && d % t != 0){
+		if (t == 1000 && p % t != 0){
 			printf("thousand ");
 		}
-		if (t == 100 && d % t != 0){
+		if (t == 100 && p% t != 0){
 			printf("hundred and ");
 		}
 		if (t == 10){
@@ -110,7 +110,9 @@ int ex1(int testcase){
 						}
 					}
 					break;
-				}
+				}if (d == 1)
+				break;
+				switch (d){
 				case 2:{
 					printf("twenty ");
 					break;
@@ -142,6 +144,7 @@ int ex1(int testcase){
 				case 9:{
 					printf("ninty ");
 					break;
+				}
 				}
 			}
 		}
