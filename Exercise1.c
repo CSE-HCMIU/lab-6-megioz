@@ -10,14 +10,14 @@
 #include <stdlib.h>
 
 int ex1(int testcase){
-	int n, t, d;
+	int n, t, p;
 	n = testcase;
 	t = 1000;
 	while (t){
 		d = n/t;
 		n %= t;
-		if (t > 10 || t == 1 || 10*d >= 20 && 10*d < 10){
-			switch (d){
+		if (t > 10 || t == 1 ||  10*d < 10){
+			switch (p){
 				case 1:{
 					printf("one ");
 					break; 
@@ -63,7 +63,7 @@ int ex1(int testcase){
 			printf("hundred and ");
 		}
 		if (t == 10){
-			switch (d){
+			switch (p){
 				case 1:{
 					int k;
 					k = n%t;
