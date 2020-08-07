@@ -110,6 +110,7 @@ int ex1(int testcase){
 						}
 					}
 					break;
+					}
 				}if (d == 1)
 				break;
 				switch (d){
